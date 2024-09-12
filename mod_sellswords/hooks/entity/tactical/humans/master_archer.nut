@@ -113,6 +113,6 @@
 		//	this.m.Skills.addTreeOfEquippedWeapon();
 		//}
 
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 	}		
 });	
