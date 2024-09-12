@@ -9,7 +9,7 @@
 		{
 			if (screen.ID != "ShadyCharacter4") continue;
 			
-			::Mod_Chirutiru.HookHelper.getOptionInEventScreen("To arms!", screen).getResult = function()
+			::Mod_Sellswords.HookHelper.getOptionInEventScreen("To arms!", screen).getResult = function()
 			{
 				local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
 				p.CombatID = "Mercs";
