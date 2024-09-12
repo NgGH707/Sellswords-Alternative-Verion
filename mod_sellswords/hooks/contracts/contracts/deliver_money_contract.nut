@@ -183,7 +183,7 @@
 			switch(screen.ID)
 			{
 			case "Mercenaries1":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("If you want it, come and take it!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("If you want it, come and take it!", screen).getResult = function()
 				{
 					local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
 					p.CombatID = "Mercs";
@@ -197,7 +197,7 @@
 				break;
 
 			case "BountyHunters1":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("If you want it, come and take it!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("If you want it, come and take it!", screen).getResult = function()
 				{
 					local p = this.World.State.getLocalCombatProperties(this.World.State.getPlayer().getPos());
 					p.CombatID = "Mercs";
@@ -222,7 +222,7 @@
 					});
 				}
 
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Crowns well deserved.", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Crowns well deserved.", screen).getResult = function()
 				{
 					this.World.Assets.addBusinessReputation(this.Const.World.Assets.ReputationOnContractSuccess);
 					local contractValue = this.Contract.m.Payment.getOnCompletion() + this.Contract.m.Payment.getInAdvance();
