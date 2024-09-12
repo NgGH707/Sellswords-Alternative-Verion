@@ -55,7 +55,9 @@
 				"weapons/barbarians/rusty_warblade",
 				"weapons/barbarians/heavy_rusty_axe",
 				"weapons/crbarbarian_hammer",
-				"weapons/crbarbarian_mace"					
+				"weapons/crbarbarian_mace"	
+				"weapons/twinaxes_t1"	
+				"weapons/twincleavers_t1"			
 			];
 			this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		}
