@@ -12,7 +12,7 @@
 	function onEquip()
 	{
 		this.food_item.onEquip();
-		::Mod_Chirutiru.HookHelper.addGenericSkillToItem.call(this);
+		::Mod_Sellswords.HookHelper.addGenericSkillToItem.call(this);
 		local skill = this.new("scripts/skills/actives/legend_eat_pie_skill");
 		skill.setItem(this);
 		skill.setAmount(this.m.Amount);

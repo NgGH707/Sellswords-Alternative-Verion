@@ -1,5 +1,5 @@
 ::mods_hookExactClass("items/supplies/dried_lamb_item", function(o) {
-	::Mod_Chirutiru.HookHelper.convertToUsableFood(o);
+	::Mod_Sellswords.HookHelper.convertToUsableFood(o);
 
 	local ws_create = o.create;
 	o.create = function()
@@ -13,7 +13,7 @@
 	o.onEquip = function()
 	{
 		this.legend_usable_food.onEquip();
-		::Mod_Chirutiru.HookHelper.addGenericSkillToItem.call(this);
+		::Mod_Sellswords.HookHelper.addGenericSkillToItem.call(this);
 		local skill = this.new("scripts/skills/actives/legend_eat_pie_skill");
 		skill.setItem(this);
 		skill.setAmount(this.m.Amount);

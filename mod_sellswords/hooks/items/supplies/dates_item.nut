@@ -1,5 +1,5 @@
 ::mods_hookExactClass("items/supplies/dates_item", function(o) {
-	::Mod_Chirutiru.HookHelper.convertToUsableFood(o);
+	::Mod_Sellswords.HookHelper.convertToUsableFood(o);
 
 	local ws_create = o.create;
 	o.create = function()

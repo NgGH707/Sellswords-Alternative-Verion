@@ -1,5 +1,5 @@
 ::mods_hookExactClass("items/supplies/black_marsh_stew_item", function(o) {
-	::Mod_Chirutiru.HookHelper.convertToUsableFood(o);
+	::Mod_Sellswords.HookHelper.convertToUsableFood(o);
 
 	local ws_create = o.create;
 	o.create = function()
@@ -15,7 +15,7 @@
 	o.onEquip <- function()
 	{
 		this.food_item.onEquip();
-		::Mod_Chirutiru.HookHelper.addGenericSkillToItem.call(this);
+		::Mod_Sellswords.HookHelper.addGenericSkillToItem.call(this);
 		local skill = this.new("scripts/skills/actives/legend_eat_rations_skill");
 		skill.setItem(this);
 		skill.setAmount(this.m.Amount/2);
