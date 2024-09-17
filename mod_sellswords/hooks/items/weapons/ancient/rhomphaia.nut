@@ -12,7 +12,7 @@
 	{
 		ws_onEquip();
 
-		::Mod_Chirutiru.HookHelper.hookSpecificItemSkill.call(this, "actives.slash", function(_skill) {
+		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.slash", function(_skill) {
 			_skill.m.FatigueCost = 10;
 		});
 	}
