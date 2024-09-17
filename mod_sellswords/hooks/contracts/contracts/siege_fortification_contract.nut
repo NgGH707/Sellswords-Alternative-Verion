@@ -129,7 +129,7 @@
 			switch(screen.ID)
 			{
 			case "AssaultTheGate":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Charge!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Charge!", screen).getResult = function()
 				{
 					local tile = this.Contract.m.Origin.getTile();
 					this.World.State.getPlayer().setPos(tile.Pos);
@@ -161,7 +161,7 @@
 				break;
 
 			case "BurnTheCastle":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Charge!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Charge!", screen).getResult = function()
 				{
 					local tile = this.Contract.m.Origin.getTile();
 					this.World.State.getPlayer().setPos(tile.Pos);
@@ -223,7 +223,7 @@
 				break;
 
 			case "AssaultTheCourtyard":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Charge!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Charge!", screen).getResult = function()
 				{
 					local tile = this.Contract.m.Origin.getTile();
 					this.World.State.getPlayer().setPos(tile.Pos);
@@ -255,7 +255,7 @@
 				break;
 
 			case "NighttimeEncounter":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Get them!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Get them!", screen).getResult = function()
 				{
 					local tile = this.Contract.m.Origin.getTile();
 					this.World.State.getPlayer().setPos(tile.Pos);
@@ -286,7 +286,7 @@
 				break;
 
 			case "NighttimeEncounterFail":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Damn it!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Damn it!", screen).getResult = function()
 				{
 					this.Flags.set("IsNighttimeEncounter", false);
 					this.Flags.set("IsReliefAttack", true);
@@ -296,7 +296,7 @@
 				break;
 
 			case "DefendersSallyForth":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Let\'s end this!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Let\'s end this!", screen).getResult = function()
 				{
 					local tile = this.Contract.m.Origin.getTile();
 					this.World.State.getPlayer().setPos(tile.Pos);
