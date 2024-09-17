@@ -80,7 +80,7 @@
 			switch(screen.ID)
 			{
 			case "AlmostLost":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Useful knowledge to have.", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Useful knowledge to have.", screen).getResult = function()
 				{
 					this.Contract.m.Destination.die();
 					this.Contract.m.Destination = null;
@@ -129,7 +129,7 @@
 				break;
 
 			case "Lost":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Damnit!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Damnit!", screen).getResult = function()
 				{
 					this.Contract.m.Destination.die();
 					this.Contract.m.Destination = null;
@@ -184,7 +184,7 @@
 				break;
 
 			case "TooLate1":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("An unexpected twist!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("An unexpected twist!", screen).getResult = function()
 				{
 					this.Contract.m.Destination.die();
 					this.Contract.m.Destination = null;
