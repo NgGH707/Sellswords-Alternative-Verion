@@ -117,7 +117,7 @@
 			}
 		}	
 		//this.m.Skills.addTreeOfEquippedWeapon(4);
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this, 4);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 4);
 		
 		if (dc <= 25)
 		{
