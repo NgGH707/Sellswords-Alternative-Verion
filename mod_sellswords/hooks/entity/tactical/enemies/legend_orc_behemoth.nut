@@ -94,7 +94,7 @@
 		}
 		
 		//this.m.Skills.addTreeOfEquippedWeapon(7);
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this, 5);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);
 		this.m.Skills.removeByID("perk.ptr_kata");				
 		local helmet;
 		helmet = [
@@ -147,7 +147,7 @@
 		this.m.Items.equip(this.new("scripts/items/" + weapons[this.Math.rand(0, weapons.len() - 1)]));
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_true_believer"));
 		//this.m.Skills.addTreeOfEquippedWeapon();
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this, 5);	
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);	
 		return true;
 	}		
 });
