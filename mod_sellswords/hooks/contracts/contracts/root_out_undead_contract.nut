@@ -9,7 +9,7 @@
 		{
 			if (screen.ID != "Necromancers") continue;
 
-			::Mod_Chirutiru.HookHelper.getOptionInEventScreen("After them!", screen).getResult = function()
+			::Mod_Sellswords.HookHelper.getOptionInEventScreen("After them!", screen).getResult = function()
 			{
 				local tile = this.Contract.m.Objective2.getTile();
 				local banner = this.Contract.m.Objective2.getBanner();
