@@ -72,7 +72,7 @@
 			this.m.Items.equip(this.new("scripts/items/weapons/fencing_sword"));
 		}
 		//this.m.Skills.addTreeOfEquippedWeapon();	
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this, 5);		
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 5);		
 		
 		if (dc <= 60)
 		{
