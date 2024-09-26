@@ -1,16 +1,15 @@
-::mods_hookExactClass("entity/tactical/humans/free_company_spearman", function(o) {
+::mods_hookExactClass("entity/tactical/humans/free_company_spearman_low", function(o) {
 	local onInit = o.onInit;
 	o.onInit = function()
 	{
 		onInit();
 		this.m.Skills.add(this.new("scripts/skills/perks/perk_legend_back_to_basics"));
-		
+
 		if (::Is_PTR_Exist)
 		{
 			this.m.Skills.add(this.new("scripts/skills/perks/perk_ptr_strength_in_numbers"));	
-			this.m.Skills.add(this.new("scripts/skills/perks/perk_str_phalanx"));
 		}
-
+				
 		if (("Assets" in this.World) && this.World.Assets != null && this.World.Assets.getEconomicDifficulty() == this.Const.Difficulty.Legendary)
 		{
 			local dc = this.World.getTime().Days;
@@ -31,9 +30,9 @@
 
 		//if (::Is_PTR_Exist)
 		//{
-		//	this.m.Skills.addTreeOfEquippedWeapon(6);
+		//	this.m.Skills.addTreeOfEquippedWeapon(4);
 		//}
 
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this, 6);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this, 4);
 	}		
 }); 
