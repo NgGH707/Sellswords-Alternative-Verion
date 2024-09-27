@@ -23,14 +23,14 @@
 	{
 		ws_onEquip();
 
-		::Mod_Chirutiru.HookHelper.hookSpecificItemSkill.call(this, "actives.split_man", function(_skill) {
+		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.split_man", function(_skill) {
 			_skill.m.DirectDamageMult = this.m.DirectDamageMult;		
 			_skill.m.ActionPointCost = 5;
 			_skill.m.orc = true;
 			_skill.m.infantry = 1;
 		});
 
-		::Mod_Chirutiru.HookHelper.hookSpecificItemSkill.call(this, "actives.split_shield", function(_skill) {
+		::Mod_Sellswords.HookHelper.hookSpecificItemSkill.call(this, "actives.split_shield", function(_skill) {
 			_skill.m.ActionPointCost = 6;		
 			_skill.setApplyAxeMastery(true);
 		});
