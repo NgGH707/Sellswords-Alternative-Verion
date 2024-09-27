@@ -1,5 +1,5 @@
 ::mods_hookExactClass("items/shields/named/named_golden_round_shield", function(o) {
-	::Mod_Chirutiru.HookHelper.hookNamedItemToChangeStats(o, function() {
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
 		this.m.Value = 2250;
 		this.m.MeleeDefense = 22;
 		this.m.RangedDefense = 19;

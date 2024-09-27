@@ -1,5 +1,5 @@
 ::mods_hookExactClass("items/shields/named/named_lindwurm_shield", function(o) {
-	::Mod_Chirutiru.HookHelper.hookNamedItemToChangeStats(o, function() {
+	::Mod_Sellswords.HookHelper.hookNamedItemToChangeStats(o, function() {
 		this.m.Value = 1800;
 		this.m.MeleeDefense = 16;
 		this.m.RangedDefense = 27;
