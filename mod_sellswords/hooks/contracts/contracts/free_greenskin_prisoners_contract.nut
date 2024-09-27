@@ -10,7 +10,7 @@
 			switch(screen.ID)
 			{
 			case "Battlesite2":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("Let\'s get moving!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("Let\'s get moving!", screen).getResult = function()
 				{
 					this.Contract.m.Destination.die();
 					this.Contract.m.Destination = null;
@@ -107,7 +107,7 @@
 				break;
 
 			case "Scouts":
-				::Mod_Chirutiru.HookHelper.getOptionInEventScreen("To arms!", screen).getResult = function()
+				::Mod_Sellswords.HookHelper.getOptionInEventScreen("To arms!", screen).getResult = function()
 				{
 					local tile = this.World.State.getPlayer().getTile();
 					local p = this.Const.Tactical.CombatInfo.getClone();
