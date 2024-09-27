@@ -130,7 +130,7 @@
 		//	this.m.Skills.addTreeOfEquippedWeapon();	
 		//}
 
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 	}
 
 	local ws_makeMiniboss = o.makeMiniboss;
@@ -145,7 +145,7 @@
 		//{
 		//	this.m.Skills.addTreeOfEquippedWeapon();
 		//}
-		::Mod_Chirutiru.HookHelper.addTreeOfEquippedWeapon(this);
+		::Mod_Sellswords.HookHelper.addTreeOfEquippedWeapon(this);
 		return true;
 	}
 });
