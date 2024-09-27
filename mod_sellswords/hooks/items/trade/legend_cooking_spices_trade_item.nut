@@ -14,7 +14,7 @@
 
 		if (this.m.Uses == 4)
 		{
-			result.push({
+			ret.push({
 				id = 4,
 				type = "text",
 				text = "Can be used in recipes 4 times"
@@ -22,7 +22,7 @@
 		}
 		else
 		{
-			result.push({
+			ret.push({
 				id = 4,
 				type = "text",
 				text = "Uses remaining: " + this.m.Uses + "/4"
